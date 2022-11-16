@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>119140162 - Rendy Noor Darmawan</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="atas">
+                <img class="gambar" src="assets/img/foto pplk rendy.jpg">
+                <div class="title">
+                    <h1 class="h-title">Hay saya Rendy Noor Darmawan</h1>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="menubar">
+                <ul class="menu">
+                    <li><a href="#">Tentang Saya</a></li>
+                    <li><a href="#">Pengalamn Kerja</a></li>
+                    <li><a href="#">Hubungi Saya</a></li>
+                </ul>
+            </div>
+        </nav>
+        <content>
+            <div class="darkmode">
+				<article id="a">
+					<div class="tentangsaya">
+						<h2 class="subtittle">Tentang Saya</h2>
+					</div>
+				</article>
+				<div id="toggle">
+					<i class="indicator"></i>
+				</div>
+			</div>
+            <div class="article row">
+                <div class="detail col-12 col-lg-6 col-md-12 col-sm-12">
+                    <p>Saya adalah serotang mahasiswa Teknik Informatika 2019 Institut Teknologi Sumatera.
+                        Saya lahir di Jakarta pada tanggal 1 April 2001. Pada tahun ini saya sedang menjalani studi
+                        semester 7. Saat ini saya tertarik pada bidang data science</p>
+                </div>
+                <div class="vid col-12 col-lg-6 col-md-12 col-sm-12">
+                    <span> <iframe width="100%" height="315" src="assets/video/video.mp4"></iframe></span>
+                </div>
+            </div>
+            <article id="b">
+                <div class="tentangsaya">
+                    <h2 class="subtittle">Pengalaman Kerja</h2>
+                </div>
+            </article>
+            <table class="table-pengalaman table table-secondary">
+                <thead>
+                    <tr>
+                        <th rowspan="2">NO</th>
+                        <th rowspan="2">POSISI</th>
+                        <th rowspan="2">PERUSAHAAN</th>
+                        <th colspan="2">WAKTU</th>
+
+                    </tr>
+                    <tr>
+                        <th>MULAI</th>
+                        <th>SELESAI</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Staff magang</td>
+                        <td>ITMI</td>
+                        <td>2020</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ketua Divisi</td>
+                        <td>ITMI</td>
+                        <td>2021</td>
+                        <td>2022</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>mahasiswa</td>
+                        <td>ITERA</td>
+                        <td>2019</td>
+                        <td>sekarang</td>
+                    </tr>
+                </tbody>
+            </table>
+            <article id="c">
+                <div class="tentangsaya">
+                    <h2 class="subtittle">Hubungi Saya</h2>
+            </article>
+            <div class="row">
+                <div class="pertanyaan mt-3 col-lg-3 col-md-4 col-sm-5 col-12">
+                    <form class="isi">
+                        <div class="mb-3 name">
+                            <label class="form-label">Nama</label>
+                            <input type="text" class="form-control">
+
+                        </div>
+                        <label class="form-label">Sudah nonton video saya?</label>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Sudah</label><br>
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label1" for="exampleCheck1">Belum</label>
+                        </div>
+                        <label class="form-label">Apa coba?</label>
+                        <div class="mb-3 form-check">
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Sudah</label><br>
+                            <input type="radio" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label1" for="exampleCheck1">Belum</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Kirim</button>
+                    </form>
+                </div>
+            </div>
+
+        </content>
+        <footer> &copy; Rendy Noor Darmawan - 119140162</footer>
+    </div>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            body.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
